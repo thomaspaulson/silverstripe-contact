@@ -1,0 +1,8 @@
+<?php
+//
+if(Director::isLive()){
+  define('EMAIL', 'info@havetour.com');
+} else {
+  define('EMAIL', 'dev@havetour.com');  
+}
+Email::setAdminEmail(EMAIL);
